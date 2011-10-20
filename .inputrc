@@ -1,0 +1,8 @@
+set completion-ignore-case on  
+#这个选项很直白，自动补全时忽略大小写
+set completion-prefix-display-length 2 
+#如果你的某个文件夹下有一堆相似的文件名，那这个选项会非常有用，它会将所有自动补全文件名中相同的部分以...代替，让你更容易找到你想要的文件.
+Control-j: menu-complete
+Control-k: menu-complete-backward
+#如果自动补全的结果只有2，3个文件，这两个选项可以让你通过Ctrl-j和Ctrl-k在结果中快速选择你想要的文件。
+set completion-map-case on

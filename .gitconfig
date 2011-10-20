@@ -1,0 +1,20 @@
+[user]
+	name = netbook liu
+	email = korige@gmail.com
+[github]
+    user = korige
+    token = db64a61c66e220d5ad89875e19666a08
+[http]
+    sslVerify = false
+[alias]
+    co = checkout
+    ci = commit -a
+    st = status
+    br = branch
+    oneline = log --pretty=oneline --since='2 days ago'
+    onlog = log -p -1
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = auto
