@@ -98,3 +98,12 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+#Show the current git branch
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+PS1="\\w \$(parse_git_branch)> "
+
+#[cygwin]simplify the path, do not let windows path pollute here.
+#if we need some, just add here.
+export PATH="/bin:/usr/bin:/usr/local/bin:/cygdrive/c/Program Files/nodejs"
