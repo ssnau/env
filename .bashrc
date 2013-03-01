@@ -107,3 +107,6 @@ PS1="\\w \$(parse_git_branch)> "
 #[cygwin]simplify the path, do not let windows path pollute here.
 #if we need some, just add here.
 export PATH="/bin:/usr/bin:/usr/local/bin:/cygdrive/c/Program Files/nodejs"
+
+#make sure wget can always work, no need to check certificate if there are https
+alias wget='wget --no-check-certificate'
