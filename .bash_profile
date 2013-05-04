@@ -123,3 +123,5 @@ if [ "$OS" == "windows" ]; then
     #make sure wget can always work, no need to check certificate if there are https
     alias wget='wget --no-check-certificate'
 fi
+
+export PATH=$PATH:/usr/local/share/npm/bin
