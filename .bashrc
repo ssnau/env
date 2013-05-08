@@ -113,7 +113,7 @@ fi
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
-PS1="\\w \$(parse_git_branch)> "
+PS1="\\w \e[0;35m\$(parse_git_branch)\e[m> "
 
 if [ "$OS" == "windows" ]; then
     #[cygwin]simplify the path, do not let windows path pollute here.
