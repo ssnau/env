@@ -20,3 +20,11 @@
     ui = auto
 [core]
     autocrlf = true #avoid showing ^M when git diff
+[diff]
+    tool = kdiff3
+
+[difftool "kdiff3"]
+    path = /home/Administrator/kdiff3.sh
+    keepBackup = false
+    trustExitCode = false
+    prompt = false
