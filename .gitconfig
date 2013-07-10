@@ -1,9 +1,6 @@
 [user]
-	name = netbook liu
-	email = korige@gmail.com
-[github]
-    user = korige
-    token = db64a61c66e220d5ad89875e19666a08
+	name = jobs
+	email = jobs@apple.com
 [http]
     sslVerify = false
 [alias]
