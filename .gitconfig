@@ -5,7 +5,7 @@
     sslVerify = false
 [alias]
     co = checkout
-    ci = commit -a
+    ci = commit
     st = status
     br = branch
     oneline = log --pretty=oneline --since='2 days ago'
