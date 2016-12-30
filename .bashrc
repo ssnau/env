@@ -125,3 +125,14 @@ if [ "$OS" == "windows" ]; then
 fi
 
 export PATH=$PATH:/usr/local/share/npm/bin
+
+
+### useful functions
+# [e.g.] ptouch a/b/c/e.txt
+ptouch() {
+    for p in "$@"; do
+        _dir="$(dirname -- "$p")"
+        [ -d "$_dir" ] || mkdir -p -- "$_dir"
+    touch -- "$p"
+    done
+}
