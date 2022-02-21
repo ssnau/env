@@ -140,4 +140,6 @@ nmap <C-W><C-F> :FirstExplorerWindow<CR>
 nmap <C-W><C-B> :BottomExplorerWindow<CR>
 nmap <silent> <leader>wm :WMToggle<CR> 
 
+" fzf
+set rtp+=/usr/local/opt/fzf
 
